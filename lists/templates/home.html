@@ -5,11 +5,16 @@
 
 <body>
 <h1>Your To-Do list</h1>
-<input id="id_new_item" placeholder="Enter a to-do item"/>
+<form method="POST">
+<input name="item_text" id="id_new_item" placeholder="Enter a to-do item"/>
+{% csrf_token %}
+</form>
+
 <table id="id_list_table">
+  <tr><td>1: {{ new_item_text }}</td></tr>
 </table>
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Tue Dec 30 13:01:12 EST 2014 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Tue Dec 30 21:11:56 EST 2014 <!-- hhmts end -->
 </body> </html>
