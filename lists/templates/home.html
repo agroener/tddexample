@@ -1,20 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html> <head>
+<html>
+<head>
 <title>To-Do lists</title>
 </head>
 
 <body>
 <h1>Your To-Do list</h1>
 <form method="POST">
-<input name="item_text" id="id_new_item" placeholder="Enter a to-do item"/>
+<input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />
 {% csrf_token %}
 </form>
 
 <table id="id_list_table">
-  <tr><td>1: {{ new_item_text }}</td></tr>
+  <tr><td>{{ new_item_text }}</td></tr>
 </table>
-
-<hr>
-<address></address>
-<!-- hhmts start -->Last modified: Tue Dec 30 21:11:56 EST 2014 <!-- hhmts end -->
-</body> </html>
+</body>
+</html>
